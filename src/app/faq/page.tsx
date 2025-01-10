@@ -1,7 +1,6 @@
 "use client";
 import Heroimg from "@/components/home/heroimg";
 import React, { useState } from "react";
-import { AiOutlinePlus } from "react-icons/ai";
 import {
   Accordion,
   AccordionContent,
