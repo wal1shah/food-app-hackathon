@@ -1,4 +1,3 @@
-import Header from "@/components/home/header";
 import Heroimg from "@/components/home/heroimg";
 import Image from "next/image";
 import React from "react";

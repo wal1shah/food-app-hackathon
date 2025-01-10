@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { RxCountdownTimer } from "react-icons/rx";
+import Image from "next/image";
 import { TiSocialFacebook } from "react-icons/ti";
 import { TiSocialTwitter } from "react-icons/ti";
 import { TiSocialInstagram } from "react-icons/ti";
@@ -18,7 +18,8 @@ const Footer = () => {
             support?
           </h2>
           <p className="text-[14px] md:text-[16px] font-[400] text-white">
-            Don’t wait, make a smart & logical quote here. It's pretty easy.
+            Don&apos;t wait, make a smart & logical quote here. It&apos;s pretty
+            easy.
           </p>
         </div>
         <div className="w-full ml-0 mx-auto md:flex items-center md:ml-52">
@@ -47,10 +48,11 @@ const Footer = () => {
           </p>
           <div className="flex gap-4 items-center">
             <button className="bg-[#FF9F0D] w-[70px] h-[70px] rounded-sm flex items-center justify-center">
-              <img
-                src="images/icons/Clock.png"
+              <Image
+                src="/images/icons/Clock.png"
                 alt="clock icon"
-                className="w-[40px]"
+                width={40}
+                height={40}
               />
             </button>
             <p className="text-white text-sm">
@@ -107,11 +109,16 @@ const Footer = () => {
           <div className="space-y-4 mt-4">
             {[1, 2, 3].map((_, index) => (
               <div key={index} className="flex items-center gap-4">
-                <img
-                  src="/images/heroimages/footerimg.jpg"
-                  alt="recentpost img"
-                  className="w-[80px] h-[80px]"
-                />
+                <div className="w-[80px] h-[80px] overflow-hidden">
+                  <Image
+                    src="/images/heroimages/footerimg.jpg"
+                    alt="recentpost img"
+                    width={80}
+                    height={80}
+                    className="object-cover"
+                  />
+                </div>
+
                 <p className="text-sm">
                   Is fastfood good for your body?
                   <br />
