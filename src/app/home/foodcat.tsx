@@ -1,6 +1,5 @@
 import React from "react";
 import { Great_Vibes } from "next/font/google";
-import { Section } from "lucide-react";
 import Image from "next/image";
 
 const greatVibes = Great_Vibes({

@@ -1,5 +1,4 @@
 import React from "react";
-import Hero from "./home/firstsec";
 import Firstsec from "./home/firstsec";
 import Secondsec from "./home/secondsec";
 import Foodcat from "./home/foodcat";

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
-import { Great_Vibes } from "next/font/google";
 import "./globals.css";
 import Header from "@/app/components/Common/header";
 import Footer from "@/app/components/Common/footer";
@@ -10,10 +9,6 @@ const font = Roboto({
   subsets: ["latin"],
 });
 
-const greatVibes = Great_Vibes({
-  weight: "400",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Food Restaurant App",
