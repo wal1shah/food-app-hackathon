@@ -9,7 +9,7 @@ import { TiSocialPinterest } from "react-icons/ti";
 
 const Footer = () => {
   return (
-    <div className="w-full bg-black pt-16 ">
+    <div className="w-full bg-black pt-44 ">
       {/* Support Section */}
       <div className="max-w-[1169px] flex flex-col md:flex-row px-6 md:px-0 mx-auto border-b-2 border-[#ff9f0d] pb-6">
         <div className="space-y-4 pb-5 w-full md:w-full">

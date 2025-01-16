@@ -1,17 +1,19 @@
 import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
+import { Great_Vibes } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/home/header";
-import Footer from "@/components/home/footer";
-
-
+import Header from "@/app/components/Common/header";
+import Footer from "@/app/components/Common/footer";
 
 const font = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
   subsets: ["latin"],
 });
 
-
+const greatVibes = Great_Vibes({
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
   title: "Food Restaurant App",
@@ -26,7 +28,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${font.className} antialiased`}>
-        <Header /> {children}
+        <Header />
+        {children}
         <Footer />
       </body>
     </html>

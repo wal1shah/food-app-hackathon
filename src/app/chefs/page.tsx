@@ -1,4 +1,4 @@
-import Heroimg from "@/components/home/heroimg";
+import Heroimg from "@/app/components/Common/heroimg";
 import Image from "next/image";
 import React from "react";
 

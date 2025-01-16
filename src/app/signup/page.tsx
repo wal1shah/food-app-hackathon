@@ -1,5 +1,5 @@
 import React from "react";
-import Heroimg from "@/components/home/heroimg";
+import Heroimg from "@/app/components/Common/heroimg";
 import { AiOutlineUser } from "react-icons/ai";
 import { AiOutlineMail } from "react-icons/ai";
 import { HiOutlineLockClosed } from "react-icons/hi";

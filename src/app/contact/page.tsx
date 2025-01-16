@@ -1,4 +1,4 @@
-import Heroimg from "@/components/home/heroimg";
+import Heroimg from "@/app/components/Common/heroimg";
 import React from "react";
 
 const Contact = () => {

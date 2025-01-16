@@ -1,5 +1,5 @@
 import React from "react";
-import Heroimg from "@/components/home/heroimg";
+import Heroimg from "@/app/components/Common/heroimg";
 
 const Error = () => {
   return (

@@ -34,7 +34,7 @@ const Header = () => {
           </Link>
           <Link className="text-lg font-bold text-white" href="/shop">
             Shop
-          </Link>{" "}
+          </Link>
           <Link className="text-lg font-bold text-white" href="/contact">
             Contact
           </Link>

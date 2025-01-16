@@ -1,12 +1,12 @@
 "use client";
-import Heroimg from "@/components/home/heroimg";
+import Heroimg from "@/app/components/Common/heroimg";
 import React, { useState } from "react";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
+} from "@/app/components/ui/accordion";
 
 const Faq = () => {
   const [expandedItem, setExpandedItem] = useState<string | null>(null);
