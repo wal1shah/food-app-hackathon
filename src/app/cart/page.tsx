@@ -1,12 +1,12 @@
 import Heroimg from "@/components/Common/heroimg";
 import React from "react";
 
-const Page = () => {
+const Shoppingcart = () => {
   return (
     <div>
-      <Heroimg title="Our Menu" subtitle="Menu" />
+      <Heroimg title="Shopping Cart" subtitle="Cart" />
     </div>
   );
 };
 
-export default Page;
+export default Shoppingcart;

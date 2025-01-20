@@ -4,7 +4,7 @@ import type { NextConfig } from "next";
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["www.themealdb.com"], // Add the hostname here
+    domains: ["cdn.sanity.io"], // Add the hostname here
   },
 };
 

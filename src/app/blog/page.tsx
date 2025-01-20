@@ -1,5 +1,5 @@
 import React from "react";
-import Heroimg from "@/app/components/Common/heroimg";
+import Heroimg from "@/components/Common/heroimg";
 
 const Page = () => {
   return (

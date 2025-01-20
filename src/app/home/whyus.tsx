@@ -3,6 +3,7 @@ import { Great_Vibes } from "next/font/google";
 import { PiHamburgerLight } from "react-icons/pi";
 import { GiShatteredGlass } from "react-icons/gi";
 import { GiFullPizza } from "react-icons/gi";
+import Image from "next/image";
 
 const greatVibes = Great_Vibes({
   weight: "400",
@@ -67,46 +68,58 @@ const Whyus = () => {
         <div className="lg:w-1/2 grid grid-cols-2 lg:grid-cols-3 gap-4 relative pb-14">
           {/* First row */}
           <div className="col-span-2 ">
-            <img
+            <Image
               src="/images/chooseus1.jpg"
               alt="Image 1"
+              width={362}
+              height={356}
               className="w-[362px] h-[356px] object-cover rounded-lg"
             />
           </div>
           <div className="pt-32">
-            <img
+            <Image
               src="/images/chooseus2.jpg"
               alt="Image 2"
+              width={281}
+              height={231}
               className="w-[281px] h-[231px] object-cover rounded-lg"
             />
           </div>
 
           <div>
-            <img
+            <Image
               src="/images/chooseus3.jpg"
               alt="Image 3"
+              width={244}
+              height={260}
               className="w-[244px] h-[260px] object-cover rounded-lg"
             />
           </div>
           <div>
-            <img
+            <Image
               src="/images/chooseus4.jpg"
               alt="Image 4"
+              width={221}
+              height={226}
               className="w-[221px] h-[226px] object-cover rounded-lg"
             />
           </div>
           <div className="w-full h-full max-w-[168px] max-h-[168px]">
-            <img
+            <Image
               src="/images/chooseus5.jpg"
               alt="Image 5"
+              width={168}
+              height={168}
               className="w-[168px] h-[168px] object-cover rounded-lg"
             />
           </div>
 
           <div className="relative lg:absolute lg:top-[560px] lg:left-[368px] w-[168px] h-[168px] mx-auto">
-            <img
+            <Image
               src="/images/chooseus6.jpg"
               alt="Image 6"
+              width={168}
+              height={168}
               className="w-[168px] h-[168px] object-cover rounded-lg"
             />
           </div>

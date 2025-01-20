@@ -17,7 +17,7 @@ const Header = () => {
 
         {/* PC Navbar */}
         <nav className="hidden md:flex space-x-6">
-          <Link className="text-[#FF9F0D] font-bold text-lg" href="/home">
+          <Link className="text-[#FF9F0D] font-bold text-lg" href="/">
             Home
           </Link>
           <Link className="text-lg font-bold text-white" href="/menu">
@@ -47,7 +47,7 @@ const Header = () => {
           </SheetTrigger>
           <SheetContent className="p-6">
             <nav className="space-y-4 flex flex-col">
-              <Link className="text-[#FF9F0D] font-bold" href="/home">
+              <Link className="text-[#FF9F0D] font-bold" href="/">
                 Home
               </Link>
               <Link className="text-lg font-bold text-black" href="/menu">

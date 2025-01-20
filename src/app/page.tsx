@@ -3,7 +3,7 @@ import Firstsec from "./home/firstsec";
 import Secondsec from "./home/secondsec";
 import Foodcat from "./home/foodcat";
 import Whyus from "./home/whyus";
-import Ourdetails from "@/app/components/Common/ourdetails";
+import Ourdetails from "./home/ourdetails";
 const Page = () => {
   return (
     <div>
