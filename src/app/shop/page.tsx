@@ -7,6 +7,13 @@ import { FaStar } from "react-icons/fa6";
 import { CiStar } from "react-icons/ci";
 import { client } from "@/sanity/lib/client";
 
+interface Product {
+  _id: string;
+  imageUrl: string;
+  name: string;
+  price: number;
+}
+
 const Ourshop = async () => {
   const query = `*[_type=="food"]{
   _id,
@@ -52,7 +59,7 @@ const Ourshop = async () => {
             </div>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 mt-6">
-            {data.map((item: any) => (
+            {data.map((item: Product) => (
               <div
                 key={item._id}
                 className="shadow-md p-4 w-full m-4 rounded-lg"
