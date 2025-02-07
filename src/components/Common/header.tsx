@@ -17,25 +17,46 @@ const Header = () => {
 
         {/* PC Navbar */}
         <nav className="hidden md:flex space-x-6">
-          <Link className="text-[#FF9F0D] font-bold text-lg" href="/">
+          <Link
+            className="text-white font-bold text-lg hover:text-[#FF9F0D]"
+            href="/"
+          >
             Home
           </Link>
-          <Link className="text-lg font-bold text-white" href="/menu">
+          <Link
+            className="text-lg font-bold text-white hover:text-[#FF9F0D]"
+            href="/menu"
+          >
             Menu
           </Link>
-          <Link className="text-lg font-bold text-white" href="/blog">
+          <Link
+            className="text-lg font-bold text-white hover:text-[#FF9F0D]"
+            href="/blog"
+          >
             Blog
           </Link>
-          <Link className="text-lg font-bold text-white" href="/chefs">
+          <Link
+            className="text-lg font-bold text-white hover:text-[#FF9F0D]"
+            href="/chefs"
+          >
             Chefs
           </Link>
-          <Link className="text-lg font-bold text-white" href="/about">
+          <Link
+            className="text-lg font-bold text-white hover:text-[#FF9F0D]"
+            href="/about"
+          >
             About
           </Link>
-          <Link className="text-lg font-bold text-white" href="/shop">
+          <Link
+            className="text-lg font-bold text-white hover:text-[#FF9F0D]"
+            href="/shop"
+          >
             Shop
           </Link>
-          <Link className="text-lg font-bold text-white" href="/contact">
+          <Link
+            className="text-lg font-bold text-white hover:text-[#FF9F0D]"
+            href="/contact"
+          >
             Contact
           </Link>
         </nav>
@@ -77,7 +98,9 @@ const Header = () => {
           <Link href="/signup">
             <PiUserLight size={24} />
           </Link>
-          <PiHandbagLight size={24} />
+          <Link href="/cart">
+            <PiHandbagLight size={24} />
+          </Link>
         </div>
       </div>
     </header>

@@ -3,12 +3,12 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Common/header";
 import Footer from "@/components/Common/footer";
+import { CartProvider } from "@/context/cartcontext";
 
 const font = Roboto({
   weight: ["100", "300", "400", "500", "700", "900"],
   subsets: ["latin"],
 });
-
 
 export const metadata: Metadata = {
   title: "Food Restaurant App",
@@ -23,9 +23,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${font.className} antialiased`}>
-        <Header />
-        {children}
-        <Footer />
+        <Header /> <CartProvider>{children}</CartProvider>
+        <Footer />{" "}
       </body>
     </html>
   );

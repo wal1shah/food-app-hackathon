@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import Heroimg from "@/components/Common/heroimg";
 import { CiSearch } from "react-icons/ci";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
 import { FaStar } from "react-icons/fa6";
@@ -25,18 +26,10 @@ const Ourshop = async () => {
 
   return (
     <>
-      <section
-        className="bg-cover bg-center h-64 flex items-center justify-center"
-        style={{ backgroundImage: "url('/images/bg.png')" }}
-      >
-        <div className="text-center text-white">
-          <h2 className="text-4xl font-bold">Our Shop</h2>
-          <p className="pt-2">
-            <Link href="/">Home</Link> ›
-            <span className="text-yellow-400"> Shop</span>
-          </p>
-        </div>
-      </section>
+      <div>
+        {" "}
+        <Heroimg title="Our Shop" subtitle="Shop" />{" "}
+      </div>
       <div className="container mt-32 mb-16 flex flex-col md:flex-row gap-8  mx-auto px-4">
         <div className="md:w-[984px] px-4 w-full">
           <div className="flex flex-col md:flex-row gap-3  w-[317]px">
@@ -58,27 +51,26 @@ const Ourshop = async () => {
               </select>
             </div>
           </div>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 mt-6">
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6 mt-6 sm:mx-auto">
             {data.map((item: Product) => (
               <div
                 key={item._id}
-                className="shadow-md p-4 w-full m-4 rounded-lg"
+                className="relative shadow-md p-4 w-full sm:max-w-screen m-4 rounded-lg group hover:shadow-2xl"
               >
-                <Link href={`./products/${item._id}`}>
+                <Link className="" href={`./productinfo/${item._id}`}>
+                  {/* Product Image */}
                   <Image
                     src={item.imageUrl}
                     alt={item.name}
                     width={312}
                     height={267}
-                    className="object-cover w-full h-[180px]"
+                    className="object-cover w-full h-[180px] rounded-lg"
                   />
-                </Link>
-                <h2 className="text-xl font-bold p-2 ">{item.name}</h2>
-                <p className="text-gray-600 pl-2">$ {item.price}.00</p>
-                <Link href={`/productinfo/${item._id}`}>
-                  <button className="mt-2 w-full bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
-                    Show Details
-                  </button>
+
+                  {/* Product Name & Price */}
+                  <h2 className="text-xl font-bold p-2">{item.name}</h2>
+                  <p className="text-[#FF9F0D] pl-2">$ {item.price}.00</p>
                 </Link>
               </div>
             ))}
@@ -276,10 +268,10 @@ const Ourshop = async () => {
               </p>
             </div>
             <div className="w-[225px] h-[24px] gap-2 flex">
-              <p className="font-inter font-bold text-[16px]  hover:text-[#FF9F0D] hover:underline text-[#333333]cursor-pointer">
+              <p className="font-inter font-bold text-[16px]  hover:text-[#FF9F0D] hover:underline text-[#333333] cursor-pointer">
                 Cupcake
               </p>
-              <p className="font-inter font-bold text-[16px] hover:underline hover:text-[#333333] text-[#FF9F0D] cursor-pointer">
+              <p className="font-inter font-bold text-[16px] hover:underline hover:text-[#FF9F0D] text-[#333333] cursor-pointer">
                 Burger
               </p>
               <p className="font-inter font-bold text-[16px]   hover:text-[#FF9F0D] hover:underlinetext-[#333333] cursor-pointer">
