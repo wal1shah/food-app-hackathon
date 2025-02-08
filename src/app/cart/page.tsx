@@ -5,14 +5,13 @@ import { useCart } from "@/context/cartcontext";
 export default function Cart() {
   const { cart, removeFromCart } = useCart();
 
-  // Calculate total price
+ 
   const totalPrice = cart.reduce((total, item) => total + item.price, 0);
 
   return (
     <div className="container mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold mb-6">🛒 Your Cart</h1>
 
-      {/* ✅ Show Cart Items */}
       {cart.length === 0 ? (
         <p className="text-gray-600">Your cart is empty.</p>
       ) : (
@@ -37,7 +36,6 @@ export default function Cart() {
             ))}
           </ul>
 
-          {/* ✅ Total Price & Checkout */}
           <div className="mt-6 p-4 bg-gray-200 rounded-lg">
             <h2 className="text-2xl font-bold">Total Bill:</h2>
             <p className="my-5 text-lg font-bold">

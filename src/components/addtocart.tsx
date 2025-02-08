@@ -1,4 +1,4 @@
-"use client"; // This is a client component
+"use client";
 
 import { useCart } from "@/context/cartcontext";
 import { useState } from "react";
@@ -17,12 +17,10 @@ export default function AddToCartButton({ product }: AddToCartButtonProps) {
   const { addToCart } = useCart();
   const [showMessage, setShowMessage] = useState(false);
 
-  // Handle Add to Cart
   const handleAddToCart = () => {
     addToCart(product);
     setShowMessage(true);
 
-    // Hide message after 3 seconds
     setTimeout(() => {
       setShowMessage(false);
     }, 3000);
@@ -30,7 +28,6 @@ export default function AddToCartButton({ product }: AddToCartButtonProps) {
 
   return (
     <div className="relative">
-      {/* ✅ Add to Cart Button */}
       <button
         onClick={handleAddToCart}
         className="w-1/2 bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600"
